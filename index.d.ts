@@ -1,4 +1,5 @@
-export const DOW = [
+
+export enum DOW  { 
   "Sunday",
   "Monday",
   "Tuesday",
@@ -6,9 +7,9 @@ export const DOW = [
   "Thursday",
   "Friday",
   "Saturday"
-];
+}
 
-export const MOY = [
+export enum MOY {
   "January",
   "Febuary",
   "March",
@@ -21,12 +22,13 @@ export const MOY = [
   "October",
   "November",
   "December"
-];
+}
 
 export const NORMAL = 0;
 export const OFF = 2;
 
-export const DS = [
+/** NOt sure what to do with this as of yet **/
+export type DS = [
   {
     state: 0,
     display: "",
