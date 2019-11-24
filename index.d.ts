@@ -27,31 +27,11 @@ export enum MOY {
 export const NORMAL = 0;
 export const OFF = 2;
 
-/** NOt sure what to do with this as of yet **/
-export type DS = [
-  {
-    state: 0,
-    display: "",
-    off: false
-  },
-  {
-    state: 1,
-    display: "WFH",
-    off: false
-  },
-  {
-    state: 2,
-    display: "OFF",
-    colour: "grey",
-    off: true
-  },
-  {
-    state: 3,
-    display: "SICK",
-    colour: "grey",
-    off: true
-  }
-];
+export interface DS_STATE {
+  state: number;
+  display: string;
+  off: boolean;
+}
 
 export interface Database {
   put: Function;
