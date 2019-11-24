@@ -30,6 +30,7 @@ export const OFF = 2;
 export interface DS_STATE {
   state: number;
   display: string;
+  colour?: string;
   off: boolean;
 }
 
